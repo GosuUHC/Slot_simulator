@@ -1,1 +1,1 @@
-Algorythms and how slot will do math
+Slot simulator project
