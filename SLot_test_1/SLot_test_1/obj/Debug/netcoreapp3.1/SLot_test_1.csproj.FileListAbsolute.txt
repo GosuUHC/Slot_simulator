@@ -1,0 +1,13 @@
+C:\Users\Ashot\source\repos\SLot_test_1\SLot_test_1\bin\Debug\netcoreapp3.1\SLot_test_1.exe
+C:\Users\Ashot\source\repos\SLot_test_1\SLot_test_1\bin\Debug\netcoreapp3.1\SLot_test_1.deps.json
+C:\Users\Ashot\source\repos\SLot_test_1\SLot_test_1\bin\Debug\netcoreapp3.1\SLot_test_1.runtimeconfig.json
+C:\Users\Ashot\source\repos\SLot_test_1\SLot_test_1\bin\Debug\netcoreapp3.1\SLot_test_1.runtimeconfig.dev.json
+C:\Users\Ashot\source\repos\SLot_test_1\SLot_test_1\bin\Debug\netcoreapp3.1\SLot_test_1.dll
+C:\Users\Ashot\source\repos\SLot_test_1\SLot_test_1\bin\Debug\netcoreapp3.1\SLot_test_1.pdb
+C:\Users\Ashot\source\repos\SLot_test_1\SLot_test_1\obj\Debug\netcoreapp3.1\SLot_test_1.csprojAssemblyReference.cache
+C:\Users\Ashot\source\repos\SLot_test_1\SLot_test_1\obj\Debug\netcoreapp3.1\SLot_test_1.AssemblyInfoInputs.cache
+C:\Users\Ashot\source\repos\SLot_test_1\SLot_test_1\obj\Debug\netcoreapp3.1\SLot_test_1.AssemblyInfo.cs
+C:\Users\Ashot\source\repos\SLot_test_1\SLot_test_1\obj\Debug\netcoreapp3.1\SLot_test_1.csproj.CoreCompileInputs.cache
+C:\Users\Ashot\source\repos\SLot_test_1\SLot_test_1\obj\Debug\netcoreapp3.1\SLot_test_1.dll
+C:\Users\Ashot\source\repos\SLot_test_1\SLot_test_1\obj\Debug\netcoreapp3.1\SLot_test_1.pdb
+C:\Users\Ashot\source\repos\SLot_test_1\SLot_test_1\obj\Debug\netcoreapp3.1\SLot_test_1.genruntimeconfig.cache

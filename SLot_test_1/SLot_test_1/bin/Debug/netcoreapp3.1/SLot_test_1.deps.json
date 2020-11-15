@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "SLot_test_1/1.0.0": {
+        "runtime": {
+          "SLot_test_1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SLot_test_1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
