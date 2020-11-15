@@ -17,7 +17,12 @@ namespace SLot_test_1
             double win, sum, bet;
             Console.Write("Введите начальную сумму(>0): ");
             sum = Convert.ToDouble(Console.ReadLine());
-           //Console.Write(sum);//ввод начальной суммы
+            //Console.Write(sum);//ввод и проверка начальной суммы начальной суммы. Рандом через костыли пока
+            Console.Write("Введите сумму ставки(>0): ");
+            bet = Convert.ToDouble(Console.ReadLine());//тож самое только со ставкой
+
+            pos1 = random.Next(100);//рандом вроде работает
+            Console.Write(pos1);
         }
     }
 }
