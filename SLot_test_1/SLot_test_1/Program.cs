@@ -27,12 +27,12 @@ namespace SLot_test_1
             //Console.Write(pos2);
             pos3 = random.Next(100);
             //Console.Write(pos3);*/
-            for (sum=sum; sum < 0; sum -= bet)
+            for (sum=sum; sum <= 0; sum -= bet)
             {
                 rp1 = random.Next(100);
                 rp1 = random.Next(100);
                 rp1 = random.Next(100);
-               
+                
             }
         }
     }
