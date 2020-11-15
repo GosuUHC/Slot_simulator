@@ -6,6 +6,7 @@ namespace SLot_test_1
     {
         static void Main(string[] args)
         {
+            Random random = new Random();
             int pos1, pos2, pos3;
             int dev1, dev2, dev3;
             int des1, des2, des3;
@@ -14,7 +15,9 @@ namespace SLot_test_1
             int k1, k2, k3;
             int a1, a2, a3;
             double win, sum, bet;
-
+            Console.Write("Введите начальную сумму(>0): ");
+            sum = Convert.ToDouble(Console.ReadLine());
+           //Console.Write(sum);//ввод начальной суммы
         }
     }
 }

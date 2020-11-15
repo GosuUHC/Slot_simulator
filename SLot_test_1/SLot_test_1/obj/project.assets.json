@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ashot\\source\\repos\\SLot_test_1\\SLot_test_1\\SLot_test_1.csproj",
+      "projectUniqueName": "C:\\Math_project\\SLot_test_1\\SLot_test_1\\SLot_test_1.csproj",
       "projectName": "SLot_test_1",
-      "projectPath": "C:\\Users\\Ashot\\source\\repos\\SLot_test_1\\SLot_test_1\\SLot_test_1.csproj",
+      "projectPath": "C:\\Math_project\\SLot_test_1\\SLot_test_1\\SLot_test_1.csproj",
       "packagesPath": "C:\\Users\\Ashot\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ashot\\source\\repos\\SLot_test_1\\SLot_test_1\\obj\\",
+      "outputPath": "C:\\Math_project\\SLot_test_1\\SLot_test_1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ashot\\AppData\\Roaming\\NuGet\\NuGet.Config",

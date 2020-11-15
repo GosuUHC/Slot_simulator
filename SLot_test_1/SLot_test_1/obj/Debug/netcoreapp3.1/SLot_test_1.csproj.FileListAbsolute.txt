@@ -11,3 +11,16 @@ C:\Users\Ashot\source\repos\SLot_test_1\SLot_test_1\obj\Debug\netcoreapp3.1\SLot
 C:\Users\Ashot\source\repos\SLot_test_1\SLot_test_1\obj\Debug\netcoreapp3.1\SLot_test_1.dll
 C:\Users\Ashot\source\repos\SLot_test_1\SLot_test_1\obj\Debug\netcoreapp3.1\SLot_test_1.pdb
 C:\Users\Ashot\source\repos\SLot_test_1\SLot_test_1\obj\Debug\netcoreapp3.1\SLot_test_1.genruntimeconfig.cache
+C:\Math_project\SLot_test_1\SLot_test_1\bin\Debug\netcoreapp3.1\SLot_test_1.exe
+C:\Math_project\SLot_test_1\SLot_test_1\bin\Debug\netcoreapp3.1\SLot_test_1.deps.json
+C:\Math_project\SLot_test_1\SLot_test_1\bin\Debug\netcoreapp3.1\SLot_test_1.runtimeconfig.json
+C:\Math_project\SLot_test_1\SLot_test_1\bin\Debug\netcoreapp3.1\SLot_test_1.runtimeconfig.dev.json
+C:\Math_project\SLot_test_1\SLot_test_1\bin\Debug\netcoreapp3.1\SLot_test_1.dll
+C:\Math_project\SLot_test_1\SLot_test_1\bin\Debug\netcoreapp3.1\SLot_test_1.pdb
+C:\Math_project\SLot_test_1\SLot_test_1\obj\Debug\netcoreapp3.1\SLot_test_1.csprojAssemblyReference.cache
+C:\Math_project\SLot_test_1\SLot_test_1\obj\Debug\netcoreapp3.1\SLot_test_1.AssemblyInfoInputs.cache
+C:\Math_project\SLot_test_1\SLot_test_1\obj\Debug\netcoreapp3.1\SLot_test_1.AssemblyInfo.cs
+C:\Math_project\SLot_test_1\SLot_test_1\obj\Debug\netcoreapp3.1\SLot_test_1.csproj.CoreCompileInputs.cache
+C:\Math_project\SLot_test_1\SLot_test_1\obj\Debug\netcoreapp3.1\SLot_test_1.dll
+C:\Math_project\SLot_test_1\SLot_test_1\obj\Debug\netcoreapp3.1\SLot_test_1.pdb
+C:\Math_project\SLot_test_1\SLot_test_1\obj\Debug\netcoreapp3.1\SLot_test_1.genruntimeconfig.cache
