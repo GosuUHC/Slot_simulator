@@ -30,6 +30,7 @@ namespace SLot_test_1
             
             while(sum>0)
             {
+                Console.ReadLine();
                 rp1 = random.Next(100);
                 rp2 = random.Next(100);
                 rp3 = random.Next(100);
