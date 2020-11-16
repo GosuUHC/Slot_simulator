@@ -35,7 +35,7 @@ namespace SLot_test_1
                 if (rp1 <= 20 || rp2 <= 20 || rp3 <= 20)
                 {
                     if (rp1 <= 20) { pos1 = dev1; };
-                    if (rp2 <= 20) {pos2 = dev2; };
+                    if (rp2 <= 20) { pos2 = dev2; };
                     if (rp3 <= 20) { pos3 = dev3; };
                 }
                 if (rp1 <= 40 || rp2 <= 40 || rp3 <= 40)
@@ -47,34 +47,35 @@ namespace SLot_test_1
                 if (rp1 <= 60 || rp2 <= 60 || rp3 <= 60)
                 {
                     if (rp1 <= 60 && rp1 > 40) { pos1 = j1; };
-                    if (rp2 <= 60 && rp2 > 40) { pos1 = j2; };
-                    if (rp3 <= 60 && rp3 > 40) { pos1 = j3; };
+                    if (rp2 <= 60 && rp2 > 40) { pos2 = j2; };
+                    if (rp3 <= 60 && rp3 > 40) { pos3 = j3; };
                 }
                 if (rp1 <= 75 || rp2 <= 75 || rp3 <= 75)
                 {
                     if (rp1 <= 75 && rp1 > 60) { pos1 = q1; };
-                    if (rp2 <= 75 && rp2 > 60) { pos1 = q2; };
-                    if (rp3 <= 75 && rp3 > 60) { pos1 = q3; };
+                    if (rp2 <= 75 && rp2 > 60) { pos2 = q2; };
+                    if (rp3 <= 75 && rp3 > 60) { pos3 = q3; };
                 } 
                 if (rp1 <= 90 || rp2 <= 90 || rp3 <= 90)
                 {
                     if (rp1 <= 90 && rp1 > 75) { pos1 = k1; };
-                    if (rp2 <= 90 && rp2 > 75) { pos1 = k2; };
-                    if (rp3 <= 90 && rp3 > 75) { pos1 = k3; };
+                    if (rp2 <= 90 && rp2 > 75) { pos2 = k2; };
+                    if (rp3 <= 90 && rp3 > 75) { pos3 = k3; };
                 }
                 if (rp1 <= 100 || rp2 <= 100 || rp3 <= 100)
                 {
                     if (rp1 <= 100 && rp1 > 90) { pos1 = a1; };
-                    if (rp2 <= 100 && rp2 > 90) { pos1 = a2; };
-                    if (rp3 <= 100 && rp3 > 90) { pos1 = a3; };
+                    if (rp2 <= 100 && rp2 > 90) { pos2 = a2; };
+                    if (rp3 <= 100 && rp3 > 90) { pos3 = a3; };
                 }
                 sum = sum - bet;
-                System.Console.WriteLine();
+                /*System.Console.WriteLine();
                 Console.Write(pos1);
                 System.Console.WriteLine();
                 Console.Write(pos2);
                 System.Console.WriteLine();
-                Console.Write(pos3);
+                Console.Write(pos3);*/
+
             }
         }
     }
