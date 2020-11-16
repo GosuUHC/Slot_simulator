@@ -14,7 +14,7 @@ namespace SLot_test_1
             int q1=75, q2=75, q3=75;
             int k1=90, k2=90, k3=90;
             int a1=100, a2=100, a3=100;
-            double win, sum, bet;//выигрыш, начальная сумма, ставка
+            double win=0, sum, bet;//выигрыш, начальная сумма, ставка
             Console.Write("Введите начальную сумму(>0): ");
             sum = Convert.ToDouble(Console.ReadLine());
             //Console.Write(sum);//ввод и проверка начальной суммы начальной суммы. Рандом через костыли пока
@@ -27,6 +27,7 @@ namespace SLot_test_1
             //Console.Write(pos2);
             pos3 = random.Next(100);
             //Console.Write(pos3);*/
+            
             while(sum>0)
             {
                 rp1 = random.Next(100);
@@ -68,15 +69,36 @@ namespace SLot_test_1
                     if (rp2 <= 100 && rp2 > 90) { pos2 = a2; };
                     if (rp3 <= 100 && rp3 > 90) { pos3 = a3; };
                 }
-                sum = sum - bet;
-                /*System.Console.WriteLine();
+                //sum = sum - bet;//это в конец вместе с sum=sum+win
+                System.Console.WriteLine();
                 Console.Write(pos1);
                 System.Console.WriteLine();
                 Console.Write(pos2);
                 System.Console.WriteLine();
-                Console.Write(pos3);*/
+                Console.Write(pos3);
+                if (pos1 == pos2 || pos1 == pos3)
+                {
+                    if ((pos1 == pos2 && pos1 == 20) || (pos1 == pos3 && pos1 == 20)) { win = bet * 0.5; };
+                    if ((pos1 == pos2 && pos1 == 40) || (pos1 == pos3 && pos1 == 40)) { win = bet * 2.5; };
+                    if ((pos1 == pos2 && pos1 == 60) || (pos1 == pos3 && pos1 == 60)) { win = bet * 5; };
+                    if ((pos1 == pos2 && pos1 == 75) || (pos1 == pos3 && pos1 == 75)) { win = bet * 8; };
+                    if ((pos1 == pos2 && pos1 == 100) || (pos1 == pos3 && pos1 == 100)) { win = bet * 10; };
 
-            }
+                }
+                if (pos1 == pos2&&pos1==pos3)
+                {
+                    if(pos1==20) { win = bet * 15; };
+                    if (pos1 == 40) { win = bet * 25; };
+                    if (pos1 == 60) { win = bet * 40; };
+                    if (pos1 == 75) { win = bet * 60; };
+                    if (pos1 == 90) { win = bet * 100; };
+                    if (pos1 == 100) { win = bet * 200; };
+                }
+                sum -= bet;
+                sum += win;
+                win = 0;
+            }//end while
+
         }
     }
 }
