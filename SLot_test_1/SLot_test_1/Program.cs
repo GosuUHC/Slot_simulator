@@ -71,32 +71,37 @@ namespace SLot_test_1
                     if (rp3 <= 100 && rp3 > 90) { pos3 = a3; };
                 }
                 //sum = sum - bet;//это в конец вместе с sum=sum+win
-                System.Console.WriteLine();
+                Console.WriteLine();
                 Console.Write(pos1);
-                System.Console.WriteLine();
+                Console.WriteLine();
                 Console.Write(pos2);
-                System.Console.WriteLine();
+                Console.WriteLine();
                 Console.Write(pos3);
                 if (pos1 == pos2 || pos1 == pos3)
                 {
                     if ((pos1 == pos2 && pos1 == 20) || (pos1 == pos3 && pos1 == 20)) { win = bet * 0.5; };
                     if ((pos1 == pos2 && pos1 == 40) || (pos1 == pos3 && pos1 == 40)) { win = bet * 2.5; };
                     if ((pos1 == pos2 && pos1 == 60) || (pos1 == pos3 && pos1 == 60)) { win = bet * 5; };
-                    if ((pos1 == pos2 && pos1 == 75) || (pos1 == pos3 && pos1 == 75)) { win = bet * 8; };
-                    if ((pos1 == pos2 && pos1 == 100) || (pos1 == pos3 && pos1 == 100)) { win = bet * 10; };
+                    if ((pos1 == pos2 && pos1 == 75) || (pos1 == pos3 && pos1 == 75)) { win = bet * 7; };
+                    if ((pos1 == pos2 && pos1 == 90) || (pos1 == pos3 && pos1 == 90)) { win = bet * 9; };
+                    if ((pos1 == pos2 && pos1 == 100) || (pos1 == pos3 && pos1 == 100)) { win = bet * 15; };
 
                 }
                 if (pos1 == pos2&&pos1==pos3)
                 {
-                    if(pos1==20) { win = bet * 15; };
-                    if (pos1 == 40) { win = bet * 25; };
-                    if (pos1 == 60) { win = bet * 40; };
-                    if (pos1 == 75) { win = bet * 60; };
-                    if (pos1 == 90) { win = bet * 100; };
-                    if (pos1 == 100) { win = bet * 200; };
+                    if(pos1==20) { win = bet * 16; };
+                    if (pos1 == 40) { win = bet * 20; };
+                    if (pos1 == 60) { win = bet * 30; };
+                    if (pos1 == 75) { win = bet * 40; };
+                    if (pos1 == 90) { win = bet * 50; };
+                    if (pos1 == 100) { win = bet * 100; };
                 }
                 sum -= bet;
                 sum += win;
+                Console.WriteLine("\nВаш выигрыш: ");
+                Console.Write(win);
+                Console.WriteLine("\nБаланс:");
+                Console.WriteLine(sum);
                 win = 0;
             }//end while
 
