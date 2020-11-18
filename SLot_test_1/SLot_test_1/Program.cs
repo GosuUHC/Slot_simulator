@@ -30,6 +30,7 @@ namespace SLot_test_1
             
             while(sum>0)
             {
+                
                 Console.ReadLine();
                 rp1 = random.Next(100);
                 rp2 = random.Next(100);
@@ -103,6 +104,7 @@ namespace SLot_test_1
                 Console.WriteLine("\nБаланс:");
                 Console.WriteLine(sum);
                 win = 0;
+                if (sum == 0) { Console.Write("Игра завершена. Вы проиграли :("); };
             }//end while
 
         }
