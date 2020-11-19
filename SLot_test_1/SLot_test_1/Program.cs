@@ -8,12 +8,13 @@ namespace SLot_test_1
         {
             Random random = new Random();
             int pos1=0, pos2=0, pos3=0, rp1, rp2, rp3;//для 
-            int dev1=20, dev2=20, dev3=20;//обозначения переменных(символов на барабане)
-            int des1=40, des2=40, des3=40;
-            int j1=60, j2=60, j3=60;
-            int q1=75, q2=75, q3=75;
-            int k1=90, k2=90, k3=90;
+            int dev1=27, dev2=27, dev3=27;//обозначения переменных(символов на барабане)
+            int des1=48, des2=48, des3=48;
+            int j1=67, j2=67, j3=67;
+            int q1=80, q2=80, q3=80;
+            int k1=95, k2=95, k3=95;
             int a1=100, a2=100, a3=100;
+            int count = 0;//для открутки
             double win=0, sum, bet;//выигрыш, начальная сумма, ставка
             Console.Write("Введите начальную сумму(>0): ");
             sum = Convert.ToDouble(Console.ReadLine());
@@ -35,41 +36,41 @@ namespace SLot_test_1
                 rp1 = random.Next(100);
                 rp2 = random.Next(100);
                 rp3 = random.Next(100);
-                if (rp1 <= 20 || rp2 <= 20 || rp3 <= 20)
+                if (rp1 <= 27 || rp2 <= 27 || rp3 <= 27)
                 {
-                    if (rp1 <= 20) { pos1 = dev1; };
-                    if (rp2 <= 20) { pos2 = dev2; };
-                    if (rp3 <= 20) { pos3 = dev3; };
+                    if (rp1 <= 27) { pos1 = dev1; };
+                    if (rp2 <= 27) { pos2 = dev2; };
+                    if (rp3 <= 27) { pos3 = dev3; };
                 }
-                if (rp1 <= 40 || rp2 <= 40 || rp3 <= 40)
+                if (rp1 <= 48 || rp2 <= 48 || rp3 <= 48)
                 {
-                    if (rp1 <= 40 && rp1 > 20) { pos1 = des1; };
-                    if (rp2 <= 40 && rp2 > 20) { pos2 = des2; };
-                    if (rp3 <= 40 && rp3 > 20) { pos3 = des3; };
+                    if (rp1 <= 48 && rp1 > 27) { pos1 = des1; };
+                    if (rp2 <= 48 && rp2 > 27) { pos2 = des2; };
+                    if (rp3 <= 48 && rp3 > 27) { pos3 = des3; };
                 }
-                if (rp1 <= 60 || rp2 <= 60 || rp3 <= 60)
+                if (rp1 <= 67 || rp2 <= 67 || rp3 <= 67)
                 {
-                    if (rp1 <= 60 && rp1 > 40) { pos1 = j1; };
-                    if (rp2 <= 60 && rp2 > 40) { pos2 = j2; };
-                    if (rp3 <= 60 && rp3 > 40) { pos3 = j3; };
+                    if (rp1 <= 67 && rp1 > 48) { pos1 = j1; };
+                    if (rp2 <= 67 && rp2 > 48) { pos2 = j2; };
+                    if (rp3 <= 67 && rp3 > 48) { pos3 = j3; };
                 }
-                if (rp1 <= 75 || rp2 <= 75 || rp3 <= 75)
+                if (rp1 <= 80 || rp2 <= 80 || rp3 <= 80)
                 {
-                    if (rp1 <= 75 && rp1 > 60) { pos1 = q1; };
-                    if (rp2 <= 75 && rp2 > 60) { pos2 = q2; };
-                    if (rp3 <= 75 && rp3 > 60) { pos3 = q3; };
+                    if (rp1 <= 80 && rp1 > 67) { pos1 = q1; };
+                    if (rp2 <= 80 && rp2 > 67) { pos2 = q2; };
+                    if (rp3 <= 80 && rp3 > 67) { pos3 = q3; };
                 } 
-                if (rp1 <= 90 || rp2 <= 90 || rp3 <= 90)
+                if (rp1 <= 95 || rp2 <= 95 || rp3 <= 95)
                 {
-                    if (rp1 <= 90 && rp1 > 75) { pos1 = k1; };
-                    if (rp2 <= 90 && rp2 > 75) { pos2 = k2; };
-                    if (rp3 <= 90 && rp3 > 75) { pos3 = k3; };
+                    if (rp1 <= 95 && rp1 > 80) { pos1 = k1; };
+                    if (rp2 <= 95 && rp2 > 80) { pos2 = k2; };
+                    if (rp3 <= 95 && rp3 > 80) { pos3 = k3; };
                 }
                 if (rp1 <= 100 || rp2 <= 100 || rp3 <= 100)
                 {
-                    if (rp1 <= 100 && rp1 > 90) { pos1 = a1; };
-                    if (rp2 <= 100 && rp2 > 90) { pos2 = a2; };
-                    if (rp3 <= 100 && rp3 > 90) { pos3 = a3; };
+                    if (rp1 <= 100 && rp1 > 95) { pos1 = a1; };
+                    if (rp2 <= 100 && rp2 > 95) { pos2 = a2; };
+                    if (rp3 <= 100 && rp3 > 95) { pos3 = a3; };
                 }
                 //sum = sum - bet;//это в конец вместе с sum=sum+win
                 Console.WriteLine();
@@ -80,21 +81,21 @@ namespace SLot_test_1
                 Console.Write(pos3);
                 if (pos1 == pos2 || pos1 == pos3)
                 {
-                    if ((pos1 == pos2 && pos1 == 20) || (pos1 == pos3 && pos1 == 20)) { win = bet * 0.5; };
-                    if ((pos1 == pos2 && pos1 == 40) || (pos1 == pos3 && pos1 == 40)) { win = bet * 2.5; };
-                    if ((pos1 == pos2 && pos1 == 60) || (pos1 == pos3 && pos1 == 60)) { win = bet * 5; };
-                    if ((pos1 == pos2 && pos1 == 75) || (pos1 == pos3 && pos1 == 75)) { win = bet * 7; };
-                    if ((pos1 == pos2 && pos1 == 90) || (pos1 == pos3 && pos1 == 90)) { win = bet * 9; };
-                    if ((pos1 == pos2 && pos1 == 100) || (pos1 == pos3 && pos1 == 100)) { win = bet * 15; };
+                    if ((pos1 == pos2 && pos1 == 27) || (pos1 == pos3 && pos1 == 27)) { win = bet * 0.5; };
+                    if ((pos1 == pos2 && pos1 == 48) || (pos1 == pos3 && pos1 == 48)) { win = bet * 2.5; };
+                    if ((pos1 == pos2 && pos1 == 67) || (pos1 == pos3 && pos1 == 67)) { win = bet * 5; };
+                    if ((pos1 == pos2 && pos1 == 80) || (pos1 == pos3 && pos1 == 80)) { win = bet * 7; };
+                    if ((pos1 == pos2 && pos1 == 95) || (pos1 == pos3 && pos1 == 95)) { win = bet * 9; };
+                    if ((pos1 == pos2 && pos1 == 100) || (pos1 == pos3 && pos1 == 100)) { win = bet * 14; };
 
                 }
                 if (pos1 == pos2&&pos1==pos3)
                 {
-                    if(pos1==20) { win = bet * 16; };
-                    if (pos1 == 40) { win = bet * 20; };
-                    if (pos1 == 60) { win = bet * 30; };
-                    if (pos1 == 75) { win = bet * 40; };
-                    if (pos1 == 90) { win = bet * 50; };
+                    if(pos1 == 27) { win = bet * 12; };
+                    if (pos1 == 48) { win = bet * 16; };
+                    if (pos1 == 67) { win = bet * 25; };
+                    if (pos1 == 80) { win = bet * 35; };
+                    if (pos1 == 95) { win = bet * 40; };
                     if (pos1 == 100) { win = bet * 100; };
                 }
                 sum -= bet;
@@ -104,6 +105,7 @@ namespace SLot_test_1
                 Console.WriteLine("\nБаланс:");
                 Console.WriteLine(sum);
                 win = 0;
+                if (win>0) { count++; };
                 if (sum == 0) { Console.Write("Игра завершена. Вы проиграли :("); };
             }//end while
 
