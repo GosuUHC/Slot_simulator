@@ -15,21 +15,23 @@ namespace SLot_test_1
             int k1=95, k2=95, k3=95;
             int a1=100, a2=100, a3=100;
             int count = 0;//для открутки
-            double win=0, sum, bet;//выигрыш, начальная сумма, ставка
-            Console.Write("Введите начальную сумму(>0): ");
-            sum = Convert.ToDouble(Console.ReadLine());
-            //Console.Write(sum);//ввод и проверка начальной суммы начальной суммы. Рандом через костыли пока
-            Console.Write("Введите сумму ставки(>0): ");
-            bet = Convert.ToDouble(Console.ReadLine());//тож самое только со ставкой
-
+            double win=0, sum, bet;//выигрыш, начальная сумма, 
+            do
+            {
+                Console.Write("Введите начальную сумму(>0): ");
+                sum = Convert.ToDouble(Console.ReadLine());
+                //Console.Write(sum);//ввод и проверка начальной суммы начальной суммы. Рандом через костыли пока
+                Console.Write("Введите сумму ставки(>0): ");
+                bet = Convert.ToDouble(Console.ReadLine());//тож самое только со ставкой
+            } while (sum < 0 || bet < 0);
             /*pos1 = random.Next(100);//рандом вроде работает
             //Console.Write(pos1);
             pos2 = random.Next(100);
             //Console.Write(pos2);
             pos3 = random.Next(100);
             //Console.Write(pos3);*/
-            
-            while(sum>0)
+
+            while (sum > 0)
             {
                 
                 Console.ReadLine();
@@ -86,17 +88,21 @@ namespace SLot_test_1
                     if ((pos1 == pos2 && pos1 == 67) || (pos1 == pos3 && pos1 == 67)) { win = bet * 5; };
                     if ((pos1 == pos2 && pos1 == 80) || (pos1 == pos3 && pos1 == 80)) { win = bet * 7; };
                     if ((pos1 == pos2 && pos1 == 95) || (pos1 == pos3 && pos1 == 95)) { win = bet * 9; };
-                    if ((pos1 == pos2 && pos1 == 100) || (pos1 == pos3 && pos1 == 100)) { win = bet * 14; };
+                    if ((pos1 == pos2 && pos1 == 100) || (pos1 == pos3 && pos1 == 100)) { win = bet * 12; };
 
                 }
                 if (pos1 == pos2&&pos1==pos3)
                 {
-                    if(pos1 == 27) { win = bet * 12; };
-                    if (pos1 == 48) { win = bet * 16; };
-                    if (pos1 == 67) { win = bet * 25; };
-                    if (pos1 == 80) { win = bet * 35; };
-                    if (pos1 == 95) { win = bet * 40; };
-                    if (pos1 == 100) { win = bet * 100; };
+                    if(pos1 == 27) { win = bet * 8; };
+                    if (pos1 == 48) { win = bet * 12; };
+                    if (pos1 == 67) { win = bet * 20; };
+                    if (pos1 == 80) { win = bet * 25; };
+                    if (pos1 == 95) { win = bet * 30; };
+                    if (pos1 == 100) 
+                    {
+                        Console.WriteLine("Джекпот :)");
+                        win = bet * 80;
+                    }
                 }
                 sum -= bet;
                 sum += win;
