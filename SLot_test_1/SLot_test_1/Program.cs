@@ -15,7 +15,7 @@ namespace SLot_test_1
             int k1 = 95, k2 = 95, k3 = 95;
             int a1 = 100, a2 = 100, a3 = 100;
             double win = 0, sum, bet;//выигрыш, начальная сумма, 
-            do//серьезный баг в том, как при запланированном проигрыше выпадают символы
+            do
             {
                 Console.Write("Введите начальную сумму(>0): ");
                 sum = Convert.ToDouble(Console.ReadLine());
@@ -23,12 +23,7 @@ namespace SLot_test_1
                 Console.Write("Введите сумму ставки(>0): ");
                 bet = Convert.ToDouble(Console.ReadLine());//тож самое только со ставкой
             } while (sum < 0 || bet < 0);
-            /*pos1 = random.Next(100);//рандом вроде работает
-            //Console.Write(pos1);
-            pos2 = random.Next(100);
-            //Console.Write(pos2);
-            pos3 = random.Next(100);
-            //Console.Write(pos3);*/
+           
 
             while (sum > 0)
             {
@@ -77,17 +72,10 @@ namespace SLot_test_1
                         if (rp2 <= 100 && rp2 > 95) { pos2 = a2; };
                         if (rp3 <= 100 && rp3 > 95) { pos3 = a3; };
                     }
-                    //sum = sum - bet;//это в конец вместе с sum=sum+win
-                    /*.WriteLine();
-                    Console.Write(pos1);
-                    Console.WriteLine();
-                    Console.Write(pos2);
-                    Console.WriteLine(); Отображение символов
-                    Console.Write(pos3);*/
                     if (rpALL > 65)//срезание шанса на победу(второй прогон рандома)
                     {
-                        Console.WriteLine("RpALL(шанс на победу для отладки и тестов)=");
-                        Console.Write(rpALL);
+                        //Console.WriteLine("RpALL(шанс на победу для отладки и тестов)=");
+                        //Console.Write(rpALL);
                         Console.WriteLine();
                         Console.Write(pos1);
                         Console.WriteLine();
@@ -99,8 +87,8 @@ namespace SLot_test_1
                             if ((pos1 == pos2 && pos1 == 28) || (pos1 == pos3 && pos1 == 28)) { win = bet * 0.5; };
                             if ((pos1 == pos2 && pos1 == 50) || (pos1 == pos3 && pos1 == 50)) { win = bet * 2.5; };
                             if ((pos1 == pos2 && pos1 == 70) || (pos1 == pos3 && pos1 == 70)) { win = bet * 5; };
-                            if ((pos1 == pos2 && pos1 == 85) || (pos1 == pos3 && pos1 == 85)) { win = bet * 6; };
-                            if ((pos1 == pos2 && pos1 == 95) || (pos1 == pos3 && pos1 == 95)) { win = bet * 8; };
+                            if ((pos1 == pos2 && pos1 == 85) || (pos1 == pos3 && pos1 == 85)) { win = bet * 7; };
+                            if ((pos1 == pos2 && pos1 == 95) || (pos1 == pos3 && pos1 == 95)) { win = bet * 9; };
                             if ((pos1 == pos2 && pos1 == 100) || (pos1 == pos3 && pos1 == 100)) { win = bet * 12; };
 
                         }
